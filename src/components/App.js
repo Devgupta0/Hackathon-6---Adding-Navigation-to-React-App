@@ -1,7 +1,7 @@
 import React, {Component, useState} from "react";
 import {BrowserRouter,Link,Route,Switch,withRouter} from 'react-router-dom';
 import Home from './Home.js';
-import About from '.About.js';
+import About from '/About.js';
 import '../styles/App.css';
 
 class App extends Component {
