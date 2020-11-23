@@ -7,7 +7,7 @@ export default class Home extends React.Component{
     render(){
 
         return <div style={{background:'orange',width:"100%",height:"500px"}}>
-            You are on home.
+            You are on Home.
         </div>
     }
 }
