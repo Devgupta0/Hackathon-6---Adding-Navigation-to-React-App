@@ -16,7 +16,7 @@ class App extends Component {
                             
                                 <Link to="/about">ABOUT/</Link>
                             
-                                <Link>CONTACT-US</Link>
+                                <Link>Contact-us</Link>
                             
                     </nav>
                     
