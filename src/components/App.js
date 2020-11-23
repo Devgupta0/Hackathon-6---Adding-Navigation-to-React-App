@@ -5,15 +5,15 @@ import {useLocation} from 'react-router-dom';
 import '../styles/App.css';
 
 
-function LocationDisplay(){
+export function LocationDisplay(){
     let location=useLocation();
     return <div data-testid="location-display">{location.pathname}</div>
 }
-function Home(){
+export function Home(){
     return <div style={{backgroundColor: 'orange', width: "100%", height: "500px"}}>You are home.</div>
         
 }
-function About(){
+export function About(){
     return <div style={{backgroundColor: 'green', width: "100%", height: "500px"}}>You are on the about page.</div>
 }
 
@@ -34,7 +34,7 @@ export default class App extends Component {
                             <About />
                         </Route>
                         <Route path='*'>
-                           No match
+                           <div>No match</div>
                         </Route>
                     </Switch>
                 </BrowserRouter>
