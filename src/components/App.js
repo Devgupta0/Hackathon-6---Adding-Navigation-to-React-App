@@ -10,11 +10,14 @@ export function LocationDisplay(){
     return <div data-testid="location-display">{location.pathname}</div>
 }
 export function Home(){
-    return <div style={{backgroundColor: 'orange', width: "100%", height: "500px"}}>You are home.</div>
-        
+    return <>
+    <div style={{backgroundColor: 'orange', width: "100%", height: "500px"}}>You are home.</div>
+    </>    
 }
 export function About(){
-    return <div style={{backgroundColor: 'green', width: "100%", height: "500px"}}>You are on the about page.</div>
+    return  <>
+    <div style={{backgroundColor: 'green', width: "100%", height: "500px"}}>You are on the about page.</div>
+    </>
 }
 
 export default class App extends Component {
@@ -22,7 +25,7 @@ export default class App extends Component {
         return(
            
             <div id="main">
-                <BrowserRouter>
+                {/* <BrowserRouter> */}
                     <LocationDisplay/>
                     <Link to="/">HOME/</Link>
                     <Link to="/about">ABOUT</Link>
@@ -37,7 +40,7 @@ export default class App extends Component {
                            <div>No match</div>
                         </Route>
                     </Switch>
-                </BrowserRouter>
+                {/* </BrowserRouter> */}
             </div>
         );
     }
