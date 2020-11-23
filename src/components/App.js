@@ -1,5 +1,6 @@
 import React, {Component, useState} from "react";
-import {Link,Route,Switch,useLocation} from 'react-router-dom';
+import {Link,Route,Switch} from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
 import '../styles/App.css';
 
 
@@ -12,7 +13,7 @@ export  function Home(){
     <>
         <LocationDisplay/>
         <div style={{background:'orange',width:"100%",height:"500px"}}>
-            You are on home.
+            You are home.
         </div>
     </>
 }
@@ -31,9 +32,9 @@ export  function NotFound(){
    
 }
 
-class App extends Component {
+export default class App extends Component {
     constructor(props){
-        super();
+        super(props);
     }
     render() {
 
@@ -61,4 +62,3 @@ class App extends Component {
 
 
 
-export default App;
